@@ -12,7 +12,7 @@ const stylesHandler = 'style-loader';
 const config = {
     entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname, 'public', 'assets', 'js'),
+        path: path.resolve(__dirname),
         filename:'bundle.js'
     },
     devServer: {

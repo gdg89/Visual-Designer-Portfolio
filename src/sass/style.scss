@@ -27,10 +27,6 @@ body {
 
 }
 
-.bg-red{
-    background-color: $red-color;
-}
-
 
 
 /* ==========
@@ -42,7 +38,7 @@ header {
     justify-content: space-around;
     padding: 20px;
 
-    .brand {
+    .brand  a{
         color: $red-color;
         font-size: 1.8rem;
     }
