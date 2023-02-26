@@ -1,0 +1,60 @@
+@use 'variables' as *;
+/* ==========
+    HEADER 
+   ==========*/
+   header {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    padding: 20px;
+
+    .brand  a{
+        color: $red-color;
+        font-size: 1.8rem;
+    }
+
+    .nav-bar {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        display: grid;
+        align-items: end;
+        overflow: hidden;
+
+
+        ul {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            gap: 30px;
+
+            li{
+                padding:10px;
+            }
+            .subnavbtn {
+                width: 100%;
+                border: none;
+                background: none;
+                color: white;
+                text-transform: uppercase;
+                font-size: 0.8rem;
+                
+            }
+
+            .subnav-content {
+                display: flex;
+                background: $dark-gray;
+                flex-direction: column;
+                position: absolute;
+                padding: 10px;
+                margin-left:-11px;
+                top: 60px;
+
+                a {
+                    margin: 10px;
+                }
+
+            }
+        }
+
+
+    }
+}

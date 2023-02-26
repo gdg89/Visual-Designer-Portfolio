@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/37a1851c34.js" crossorigin="anonymous"></script>
+    <!-- style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Visual Designer</title>
 </head>
@@ -24,7 +26,7 @@
                     <a href=" https://gdg89.github.io/Visual-Designer-Portfolio/">home</a>
                 </li>
                 <li>
-                    <a href="#projects">project</a>
+                    <a href="#projects">projects</a>
                 </li>
                 <li>
                     <a href="#skills">about</a>
@@ -36,10 +38,10 @@
                     <button type="button" class="subnavbtn">Other page <i class="fa fa-caret-down"></i></button>
                     <div class="subnav-container hidde">
                         <div class="subnav-content ">
-                            <a href="#">some page 1</a>
-                            <a href="#">some page 2</a>
-                            <a href="#">some page 3</a>
-                            <a href="#">some page 4</a>
+                            <a href="#">page 1</a>
+                            <a href="#">page 2</a>
+                            <a href="#">page 3</a>
+                            <a href="#">page 4</a>
                         </div>
                     </div>
                 </li>
@@ -77,19 +79,31 @@
                     <i>ICON</i>
                     <h3>UI Design</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    <a class="know-more-link" href="">Know more -></a>
+                    <span> 
+                        <a class="know-more-link" href="">
+                            Know more <i class="fas fa-regular fa-arrow-right"></i>
+                        </a>
+                    </span>
                 </div>
                 <div class="skills-item skills-item__2">
                     <i>ICON</i>
                     <h3>Product Design</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    <a class="know-more-link" href="">Know more -></a>
+                    <span> 
+                        <a class="know-more-link" href="">
+                            Know more <i class="fas fa-regular fa-arrow-right"></i>
+                        </a>
+                    </span>
                 </div>
                 <div class="skills-item skills-item__3">
                     <i>ICON</i>
                     <h3>Branding</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    <a class="know-more-link" href="">Know more -></a>
+                    <span> 
+                        <a class="know-more-link" href="">
+                            Know more <i class="fas fa-regular fa-arrow-right"></i>
+                        </a>
+                    </span>
                 </div>
                 <div class="experience-item exp-item1">
                     <span>12</span>
@@ -114,9 +128,77 @@
             </div>
         </section>
         <!-- end skills -->
-        <section id="#projects"></section>
+        <!-- start Projects -->
+        <section id="projects" >
+            <div class="projects-container">
+                <div class="projects-header">
+                    <div class="projects-title">
+                        <h2>Featured Projects</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <button type="button" class="view-all__btn">View All</button>
+                </div>
+                <div class="projects-content">
+                    <div class="projects-item">
+                        <div class="img-project__container">
+                            <img src="./public/assets/img/beyond-hero.png" alt="my project">
+                        </div>
+                        <div class="porject-name">
+                            <h3>Project Name</h3>
+                            <span> 
+                                <a class="know-more-link" href="">
+                                    Know more <i class="fas fa-regular fa-arrow-right"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="projects-item">
+                        <div class="img-project__container">
+                            <img src="./public/assets/img/harley-hero.png" alt="my project">
+                        </div>
+                        <div class="porject-name">
+                            <h3>Project Name</h3>
+                            <span> 
+                                <a class="know-more-link" href="">
+                                    Know more <i class="fas fa-regular fa-arrow-right"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="projects-item">
+                        <div class="img-project__container">
+                            <img src="./public/assets/img/moonwatch-hero.png" alt="my project">
+                        </div>
+                        <div class="porject-name">
+                            <h3>Project Name</h3>
+                            <span> 
+                                <a class="know-more-link" href="">
+                                    Know more <i class="fas fa-regular fa-arrow-right"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="projects-item">
+                        <div class="img-project__container">
+                            <img src="./public/assets/img/sandsoftime-hero.png" alt="my project">
+                        </div>
+                        <div class="porject-name">
+                            <h3>Project Name</h3>
+                            <span> 
+                                <a class="know-more-link" href="">
+                                    Know more <i class="fas fa-regular fa-arrow-right"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- end Projects -->
     </main>
     <script src="bundle.js"></script>
+    
 </body>
 
 </html>
