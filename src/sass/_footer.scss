@@ -1,0 +1,65 @@
+@use 'variables' as *;
+
+.footer-nav{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    background: black;
+
+    &-bar{
+        ul{
+            display: flex;
+            gap:20px;
+        }
+    }
+    
+}
+
+.footer-content-container{
+    height: 100px;
+    display: flex;
+    padding: 10px 30px;
+    justify-content: center;
+    align-items: center;
+    background: $dark-gray;
+    border-top: 2px solid $dark-gray-2;
+  
+}
+
+.footer-content{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.dev-signature{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+
+    p{
+        font-weight: 300;
+        color: $light-gray;
+
+        a{
+            color: $red-color;
+            &:hover{
+                color: white;
+                font-weight: 200px;
+            }
+        }
+    }
+}
