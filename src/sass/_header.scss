@@ -1,4 +1,4 @@
-@use 'variables' as *;
+@use 'config' as *;
 /* ==========
     HEADER 
    ==========*/
@@ -10,7 +10,7 @@
 
     .brand  a{
         font-size: 1.8rem;
-        color: $light-gray;
+        color: $color-text-02;
     }
 
     .nav-bar {
@@ -21,19 +21,23 @@
         overflow: hidden;
 
 
-        ul {
+        .menu-nav {
             display: grid;
             grid-template-columns: auto auto auto auto auto;
             gap: 30px;
 
-            li{
+            &__item{
                 padding:10px;
+            }
+
+            &__link:hover{
+                color: $color-link-hover1;
             }
             .subnavbtn {
                 width: 100%;
                 border: none;
                 background: none;
-                color: white;
+                color: $color-link;
                 text-transform: uppercase;
                 font-size: 0.8rem;
                 
@@ -41,7 +45,7 @@
 
             .subnav-content {
                 display: flex;
-                background: $dark-gray;
+                background: $color-bg-02;
                 flex-direction: column;
                 position: absolute;
                 padding: 10px;
