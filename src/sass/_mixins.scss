@@ -1,18 +1,54 @@
+@use 'config' as *;
 
-// Media querys
+//flex
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-@mixin media-md{
-    @media  screen and (min-width: 768px) {
+@mixin flex-justify-align($justify, $align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+
+//button
+@mixin button {
+    width: 150px;
+    height: 50px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    color: $color-text-01;
+    background-color: $color-bg-05;
+}
+
+
+// Media queries
+@mixin mobile {
+    @media (max-width: 480px) {
         @content;
     }
 }
-@mixin media-lg{
-    @media  screen and (min-width: 1024px) {
+
+@mixin media-md {
+    @media screen and (min-width: 768px) {
         @content;
     }
 }
-@mixin media-xl{
-    @media  screen and (min-width: 1600px) {
+
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
         @content;
     }
 }

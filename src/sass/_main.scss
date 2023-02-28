@@ -1,4 +1,5 @@
 @use 'config' as *;
+@use 'mixins' as *;
 
 /* ==========
     HERO 
@@ -60,15 +61,8 @@
         }
 
         .about-me-btn {
-            width: 150px;
-            height: 50px;
+            @include button;
             margin-top: 20px;
-            font-size: 0.9rem;
-            font-weight: 400;
-            padding: 15px 20px;
-            text-transform: uppercase;
-            color: $color-text-01;
-            background-color: $color-bg-05;
         }
     }
 
@@ -150,10 +144,8 @@
         }
 
         .experience-item {
-            display: flex;
+            @include flexCenter;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
             margin-bottom: 20px;
             padding: 40px;
             background: $color-bg-03;
@@ -167,10 +159,8 @@
         }
 
         .exp-item1 {
+            @include flexCenter;
             grid-row: 6/ 12;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             font-size: 1.5rem;
             background: none;
 
@@ -197,11 +187,9 @@
 }
 
 .projects-container {
+    @include flexCenter;
     width: 80%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     margin: 0 auto;
     padding: 30px;
@@ -209,10 +197,8 @@
 }
 
 .projects-header {
+    @include flex-justify-align(space-between, center);
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 20px 0;
 
     .projects-title {
@@ -233,14 +219,7 @@
     }
 
     .view-all-btn {
-        width: 150px;
-        height: 50px;
-        font-size: 0.9rem;
-        font-weight: 400;
-        padding: 15px 20px;
-        text-transform: uppercase;
-        color:$color-text-01;
-        background-color: color-bg-05;
+        @include button;    
     }
 }
 
@@ -294,12 +273,10 @@
 }
 
 .contact-item {
+    @include flex-justify-align(space-between, center);
     width: 80%;
     margin: 0 auto;
     padding: 80px 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background: $color-bg-03;
 
     .contact-content {
@@ -321,20 +298,11 @@
     }
 
     .contact-btn-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexCenter;
         width: 40%;
     }
 
     .contact-btn {
-        width: 150px;
-        height: 50px;
-        font-size: 0.9rem;
-        font-weight: 400;
-        padding: 15px 20px;
-        text-transform: uppercase;
-        color: $color-text-01;
-        background-color: $color-bg-05;
+        @include button;
     }
 }

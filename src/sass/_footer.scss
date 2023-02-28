@@ -1,32 +1,33 @@
 @use 'config' as *;
+@use 'mixins' as *;
 
 .footer-nav{
+    @include flexCenter;
     height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding:10px;
-    background: black;
+    background:$color-bg-01;
 
     &-bar{
         ul{
             display: flex;
             gap:20px;
         }
+
+        a:hover{
+            color: $color-link-hover1;
+        }
     }
     
 }
 
 .footer-content-container{
+    @include flexCenter;
     height: 100px;
-    display: flex;
     padding: 10px 30px;
-    justify-content: center;
-    align-items: center;
-    background: $dark-gray;
-    border-top: 2px solid $dark-gray-2;
+    background: $color-bg-02;
+    border-top: 2px solid $color-bg-03;
     a{
-        color: $light-gray;
+        color: $color-text-02;
     }
     
 
@@ -43,9 +44,7 @@
         font-size: 1.8rem;
     }
     .social{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexCenter;
         gap:20px;
     }
     
@@ -56,12 +55,12 @@
     
         p{
             font-weight: 300;
-            color: $light-gray;
+            color: $color-text-02;
         }
         a{
-            color: $red-color;
+            color: $color-link-hover2;
             &:hover{
-                color: white;
+                color: $color-link;
                 font-weight: 200px;
             }
         }
