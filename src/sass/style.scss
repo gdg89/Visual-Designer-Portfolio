@@ -3,6 +3,7 @@
 @use 'header' as *;
 @use 'main' as *;
 @use 'footer' as *;
+@use 'responsive' as *;
 
 
 /* Google Fonts*/
@@ -20,9 +21,12 @@ body {
 
 }
 
-.hidde {
-    display: none;
+.overflow-hidden{
+    overflow: hidden;
+}
 
+.hidden {
+    display: none;
 }
 
 

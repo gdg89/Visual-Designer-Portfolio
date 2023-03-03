@@ -1,7 +1,13 @@
 @use 'config' as *;
 
+
+//transition
+@mixin transition-ease {
+    transition: all 0.7s ease-in-out;
+}
+
 //flex
-@mixin flexCenter{
+@mixin flex-center{
     display: flex;
     justify-content: center;
     align-items: center;

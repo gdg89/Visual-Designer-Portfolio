@@ -2,7 +2,7 @@
 @use 'mixins' as *;
 
 .footer-nav{
-    @include flexCenter;
+    @include flex-center;
     height: 100px;
     padding:10px;
     background:$color-bg-01;
@@ -21,7 +21,7 @@
 }
 
 .footer-content-container{
-    @include flexCenter;
+    @include flex-center;
     height: 100px;
     padding: 10px 30px;
     background: $color-bg-02;
@@ -44,7 +44,7 @@
         font-size: 1.8rem;
     }
     .social{
-        @include flexCenter;
+        @include flex-center;
         gap:20px;
     }
     

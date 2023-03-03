@@ -1,21 +1,26 @@
 import "./sass/style.scss";
 
+const body = document.body;
+const menubtn = document.querySelector('.menu-btn');
+const burger = document.querySelector('.menu-btn__burger');
+const menu = document.querySelector('.menu');
+const navMenu = document.querySelector('.nav-menu');
+const menuLink = document.querySelectorAll('.menu-nav__link');
 
-const subMenu = document.querySelector('.subnav-container');
-const btn = document.querySelector('.subnavbtn');
-
-btn.addEventListener('click', function() {
-    subMenu.classList.toggle('hidde');
+menubtn.addEventListener('click', function() {
+    menu.classList.toggle('open');
+    burger.classList.toggle('open');
+    body.classList.toggle('overflow-hidden');
+    navMenu.classList.toggle('open');
 });
 
-
-
-// window.addEventListener('click', function(){
-//  console.log('click no documento');
-//  const subMenuHidde = subMenu.classList.contains('hidde');
-
-//  if(!subMenuHidde)
-//   subMenu.classList.add('hidde');
-//  });
+menuLink.forEach(link =>{
+    link.addEventListener('click', function(){
+        menu.classList.toggle('open');
+        burger.classList.toggle('open');
+        body.classList.toggle('overflow-hidden');
+      
+    });
+});
 
  

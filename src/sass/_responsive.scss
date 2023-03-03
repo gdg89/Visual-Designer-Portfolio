@@ -1,0 +1,21 @@
+@use 'config' as *;
+@use 'mixins' as *;
+
+
+
+@include media-md {
+    header {
+
+        .menu-btn {
+            display: none;
+        }
+
+        .menu-nav{
+            display: block;
+            flex-direction: row;
+            gap:30px;
+            top:0
+        
+        }
+    }
+}

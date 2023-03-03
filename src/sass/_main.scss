@@ -24,6 +24,7 @@
 
             img {
                 width: 90%;
+                min-width: 380px;
             }
         }
 
@@ -144,7 +145,7 @@
         }
 
         .experience-item {
-            @include flexCenter;
+            @include flex-center;
             flex-direction: column;
             margin-bottom: 20px;
             padding: 40px;
@@ -159,7 +160,7 @@
         }
 
         .exp-item1 {
-            @include flexCenter;
+            @include flex-center;
             grid-row: 6/ 12;
             font-size: 1.5rem;
             background: none;
@@ -187,7 +188,7 @@
 }
 
 .projects-container {
-    @include flexCenter;
+    @include flex-center;
     width: 80%;
     height: 100%;
     flex-direction: column;
@@ -298,7 +299,7 @@
     }
 
     .contact-btn-container {
-        @include flexCenter;
+        @include flex-center;
         width: 40%;
     }
 
