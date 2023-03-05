@@ -63,4 +63,20 @@
             }
         }
     }
+
+    /* ==========
+   SKILLS & EXPERIENCE 
+   ==========*/
+.skills-contanier {
+    grid-template-columns: auto;
+    // padding: 100px;
+
+    .skills-content {
+        grid-template-columns: repeat(3, 1fr);
+
+        .skills-item {
+            grid-row: 1/6;
+        }
+    }
+}
 }
