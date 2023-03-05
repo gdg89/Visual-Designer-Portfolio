@@ -5,17 +5,33 @@
 
 @include media-md {
     header {
-
+        position: static;
+        
         .menu-btn {
             display: none;
         }
 
-        .menu-nav{
-            display: block;
-            flex-direction: row;
-            gap:30px;
-            top:0
-        
+        .menu{
+            position: static;
+            top: 0;
+            z-index: 0;
+            transform: translateY(0);
+
+            .menu-nav{
+                @include flex-justify-align(end, center);
+                flex-direction: row;
+                gap:30px;
+                top:0;
+                padding-top: 0;
+                background: transparent;
+                text-transform: uppercase;
+                font-size: 1rem;
+    
+                &__item {
+                    padding: 5px;
+                }
+            }
         }
+        
     }
 }
