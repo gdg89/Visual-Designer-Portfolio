@@ -4,34 +4,63 @@
 
 
 @include media-md {
+
+    /*=======
+     Header
+    =========*/
     header {
         position: static;
-        
+        width: 90%;
+        margin: 0 auto;
+
         .menu-btn {
             display: none;
         }
 
-        .menu{
+
+        .menu {
             position: static;
             top: 0;
             z-index: 0;
             transform: translateY(0);
 
-            .menu-nav{
+            .menu-nav {
                 @include flex-justify-align(end, center);
                 flex-direction: row;
-                gap:30px;
-                top:0;
+                gap: 30px;
+                top: 0;
                 padding-top: 0;
                 background: transparent;
                 text-transform: uppercase;
-                font-size: 1rem;
-    
+                font-size: 0.8rem;
+
                 &__item {
                     padding: 5px;
                 }
             }
         }
-        
+
+    }
+
+    /*=======
+       Hero
+    =========*/
+    .hero {
+        grid-template-columns: auto 20%;
+
+        .banner-img__container {
+            display: flex;
+            min-width: 380px;
+        }
+
+        .banner{
+            span{
+                font-size: 1.4rem;
+            }
+
+            h1{
+                font-size: 4.3rem;  
+            }
+        }
     }
 }
