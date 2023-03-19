@@ -87,11 +87,11 @@
     .projects-header {
         @include flex-justify-align(space-between, center);
 
-        .projects-title{
+        .projects-title {
             width: 60%;
-            
-            h2{
-                font-size: 3.5rem;  
+
+            h2 {
+                font-size: 3.5rem;
             }
         }
 
@@ -99,5 +99,11 @@
             margin-top: 0;
         }
     }
-    
+
+    .projects-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5%;
+    }
+
 }
