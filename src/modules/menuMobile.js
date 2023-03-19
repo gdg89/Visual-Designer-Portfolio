@@ -26,11 +26,11 @@ export function showMenuMobile() {
     //hide/show scroll bar on screen resize
     mediaQueries.addEventListener('change', function () {
         const menuOpen = menu.classList.contains('open');
-        
+
         if (!mediaQueries.matches) body.classList.remove('overflow-hidden');
-        
-        if (mediaQueries.matches && menuOpen)  body.classList.add('overflow-hidden');
-        
+
+        if (mediaQueries.matches && menuOpen) body.classList.add('overflow-hidden');
+
     });
 };
 
