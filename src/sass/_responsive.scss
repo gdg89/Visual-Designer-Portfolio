@@ -84,8 +84,13 @@
     /*============
     PROJECTS
     ===============*/
+    .projects-container{
+        width: 80%;
+        padding: 30px;
+    }
     .projects-header {
         @include flex-justify-align(space-between, center);
+        width: 100%;
 
         .projects-title {
             width: 60%;
@@ -106,4 +111,20 @@
         gap: 5%;
     }
 
+    .projects-item {
+
+        .img-project__container {
+            padding: 30px;
+        }
+    }
+
+}
+
+@include media-lg{
+    .projects-item {
+
+        .img-project__container {
+            padding: 40px;
+        }
+    }
 }

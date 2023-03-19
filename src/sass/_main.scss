@@ -191,17 +191,16 @@
 
 .projects-container {
     @include flex-center;
-    width: 80%;
+    width: 90%;
     height: 100%;
     flex-direction: column;
     margin: 0 auto;
-    padding: 30px;
+    
 
 }
 
 .projects-header {
-    // @include flex-justify-align(space-between, center);
-    width: 100%;
+    width: 80%;
     padding: 20px 0;
 
     .projects-title {
@@ -229,14 +228,14 @@
 .projects-content {
     display: grid;
     grid-template-columns:auto;
-    gap: 3%;
+    gap: 4%;
     margin: 30px 0;
 }
 
 .projects-item {
 
     .img-project__container {
-        padding: 40px;
+        padding: 20px;
         background: $color-bg-03;
 
         img {
