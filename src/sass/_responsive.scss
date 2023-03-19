@@ -54,30 +54,50 @@
             max-width: 622px;
         }
 
-        .banner{
-            span{
+        .banner {
+            span {
                 font-size: 1.4rem;
             }
 
-            h1{
-                font-size: 4.3rem;  
+            h1 {
+                font-size: 4.3rem;
             }
         }
     }
 
-    /* ==========
-   SKILLS & EXPERIENCE 
-   ==========*/
-.skills-contanier {
-    grid-template-columns: auto;
-    // padding: 100px;
+    /* ======================
+        SKILLS & EXPERIENCE 
+    ===========================*/
+    .skills-contanier {
+        grid-template-columns: auto;
+        // padding: 100px;
 
-    .skills-content {
-        grid-template-columns: repeat(3, 1fr);
+        .skills-content {
+            grid-template-columns: repeat(3, 1fr);
 
-        .skills-item {
-            grid-row: 1/6;
+            .skills-item {
+                grid-row: 1/6;
+            }
         }
     }
-}
+
+    /*============
+    PROJECTS
+    ===============*/
+    .projects-header {
+        @include flex-justify-align(space-between, center);
+
+        .projects-title{
+            width: 60%;
+            
+            h2{
+                font-size: 3.5rem;  
+            }
+        }
+
+        .view-all-btn {
+            margin-top: 0;
+        }
+    }
+    
 }
