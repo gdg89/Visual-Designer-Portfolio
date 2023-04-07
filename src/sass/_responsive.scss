@@ -117,6 +117,14 @@
         }
     }
 
+    /*============
+        Contact
+    ==============*/
+    .contact-item{
+        @include flex-justify-align(space-between, center);
+        flex-direction: row;
+    }
+
 }
 
 @include media-lg{

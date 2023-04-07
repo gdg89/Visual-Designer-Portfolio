@@ -1,5 +1,5 @@
 const mediaQueries = window.matchMedia("(max-width: 767px)");
-const body = document.body
+const body = document.body;
 const menubtn = document.querySelector('.menu-btn');
 const burger = document.querySelector('.menu-btn__burger');
 const menu = document.querySelector('.menu');

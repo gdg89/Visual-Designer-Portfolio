@@ -264,7 +264,8 @@
 }
 
 .contact-item {
-    @include flex-justify-align(space-between, center);
+    @include flex-center;
+    flex-direction: column;
     width: 80%;
     margin: 0 auto;
     padding: 80px 50px;
