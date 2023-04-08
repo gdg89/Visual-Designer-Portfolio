@@ -137,6 +137,20 @@
         }
     }
 
+    /*============
+        Footer
+    ==============*/
+    .footer-content{
+        width: 80%;
+        // display: grid;
+        // grid-template-columns: repeat(3, 1fr);
+
+        .dev-signature{
+          flex-direction: column;
+          text-align: end; 
+        }
+    }
+
 }
 
 @include media-lg{
