@@ -22,8 +22,7 @@
 
 .footer-content-container{
     @include flex-center;
-    // height: 100px;
-    padding: 10px 30px;
+    padding: 10px;
     background: $color-bg-02;
     border-top: 2px solid $color-bg-03;
     a{

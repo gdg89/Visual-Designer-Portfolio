@@ -140,14 +140,19 @@
     /*============
         Footer
     ==============*/
-    .footer-content{
-        width: 80%;
-        // display: grid;
-        // grid-template-columns: repeat(3, 1fr);
+    .footer-content-container{
+        .footer-content{
+            width: 80%;
+            grid-template-columns: repeat(3, 1fr);
 
-        .dev-signature{
-          flex-direction: column;
-          text-align: end; 
+            .social{
+                @include flex-justify-align(center, center);
+            }
+            .dev-signature{
+            flex-direction: column;
+            text-align: end; 
+            grid-column: 3/3;
+            }
         }
     }
 
