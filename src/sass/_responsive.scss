@@ -123,6 +123,14 @@
     .contact-item{
         @include flex-justify-align(space-between, center);
         flex-direction: row;
+
+        .contact-content{
+            width: 60%; 
+        }
+
+        .contact-btn {
+            margin-top: 0px;
+        }
     }
 
 }
