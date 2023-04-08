@@ -21,7 +21,8 @@
 }
 
 .footer-content-container{
-    @include flex-center;
+    // @include flex-center;
+    display: grid;
     height: 100px;
     padding: 10px 30px;
     background: $color-bg-02;
