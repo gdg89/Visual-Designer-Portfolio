@@ -1,7 +1,16 @@
 
-export function heroScroll(){
-    ScrollReveal().reveal('.hero', { delay: 500 });
-    ScrollReveal().reveal('.skills-item__1', { delay: 300 });
+export function scrollreveal(){
+    ScrollReveal().reveal('.hero', {
+        delay: 500,
+        distance: '50px',
+        duration:600,
+        easing: 'steps(20)'
+        
+    });
+
+
+    ScrollReveal().reveal('.skills-item__1', { delay: 300,
+    reset: true });
     ScrollReveal().reveal('.skills-item__2', { delay: 600 });
     ScrollReveal().reveal('.skills-item__3', { delay: 900 });
     ScrollReveal().reveal('.exp-item1', { delay: 300 });
