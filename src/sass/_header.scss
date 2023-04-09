@@ -82,22 +82,21 @@ header {
 
     .menu {
         @include flex-center;
-        @include transition-ease;
         position: fixed;
         height: 100%;
         width: 100%;
         left: 0;
-        top: 50px;
-        transform: translateY(-100%);
+        top:-100%;
         z-index: -1;
         
         &.open {
-            transform: translateY(0);
+            top:50px;
+            transition: top 0.6s ease-in-out;
         }
 
 
         .menu-nav {
-            @include transition-ease;
+            // @include transition-ease;
             @include flex-justify-align(start, center);
             flex-direction: column;
             padding-top: 30px;
