@@ -5,7 +5,7 @@
     HERO 
    ==========*/
 .hero {
-    height: 80vh;
+    height: 100vh;
     padding: 30px;
     display: grid;
     grid-template-columns: auto;
@@ -140,6 +140,22 @@
                 }
             }
             
+        }
+
+        .skills-item__3 {
+            background-color: $color-bg-03;
+            i,
+            a {
+                color: $color-text-03;
+            }
+
+            span{
+                i {
+                    font-size: 16px;
+                    padding-left: 5px;
+                }
+            }
+
         }
 
         .experience-item {
