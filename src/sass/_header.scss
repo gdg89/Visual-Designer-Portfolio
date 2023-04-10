@@ -96,7 +96,6 @@ header {
 
 
         .menu-nav {
-            // @include transition-ease;
             @include flex-justify-align(start, center);
             flex-direction: column;
             padding-top: 30px;

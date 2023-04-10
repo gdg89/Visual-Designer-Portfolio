@@ -1,32 +1,65 @@
 
 export function scrollreveal(){
-    ScrollReveal().reveal('.hero', {
+
+    ScrollReveal().reveal('.banner-img__container', {
         delay: 300,
-        distance: '20px',
-        duration:500,
-        easing: 'steps(20)',
+        duration: 1000,
+        easing: 'steps(10)',
+    });
+
+    ScrollReveal().reveal('.banner span , .banner h1, .banner p, .banner button', {
+        delay: 600,
+        interval: 2000,
+        duration: 1000,
+        easing: 'ease-in',
         
     });
 
     ScrollReveal().reveal('.skills-item', { 
-        delay: 300,
-        interval: 500,
-        easing: 'steps(50)',
-        reset: true
+        delay: 500,
+        interval: 400,
+        easing: 'ease-in',
+        
     });
 
     ScrollReveal().reveal('.experience-item',{
-        delay: 300,
-        interval:500,
-        easing: 'steps(50)',
-        reset:true
+        delay: 1600,
+        interval:400,
+        easing: 'ease-in',
+        
     });
 
-    ScrollReveal().reveal('.projects-header', { delay: 500 });
-    ScrollReveal().reveal('.project-1', { delay: 800 });
-    ScrollReveal().reveal('.project-2', { delay: 1100 });
-    ScrollReveal().reveal('.project-3', { delay: 1400 });
-    ScrollReveal().reveal('.project-4', { delay: 1700 });
+    ScrollReveal().reveal('.projects-header', { 
+        delay: 500,
+        duration: 500,
+        easing: 'steps(100)',
+        
+    });
+
+    ScrollReveal().reveal('.projects-item', { 
+        delay: 500,
+        interval:400,
+        duration: 500,
+        easing:'ease-in',
+        
+    
+    });
+    
+    ScrollReveal().reveal('.project-name', { 
+        delay: 200,
+        interval:600,
+        opacity: 0.3,
+        easing: 'ease-in',
+        
+    });
+   
+    ScrollReveal().reveal('.contact-item', {
+        delay: 500,
+        duration:500,
+        easing: 'ease-in',
+        // rotate: { x:-90 }
+        
+    });
 
 }
 
