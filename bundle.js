@@ -40,6 +40,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
 
 /***/ }),
 
+/***/ "./src/modules/counter.js":
+/*!********************************!*\
+  !*** ./src/modules/counter.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"counter\": () => (/* binding */ counter)\n/* harmony export */ });\nvar el = document.querySelector('.exp-test');\nfunction counter(el) {\n  var elMaxValue = el.dataset.value;\n  var elValue = 0;\n  var interval = 200;\n  var counterInterval = setInterval(function () {\n    showCounter(el, elValue);\n    elValue++;\n    if (elValue > 20) interval = 10;\n    if (elValue > elMaxValue) clearInterval(counterInterval);\n  }, interval);\n}\nfunction showCounter(el, value) {\n  el.innerText = value.toString().padStart(2, '0');\n}\n\n//# sourceURL=webpack://Visual_Designer_Pnortfolio/./src/modules/counter.js?");
+
+/***/ }),
+
 /***/ "./src/modules/menuMobile.js":
 /*!***********************************!*\
   !*** ./src/modules/menuMobile.js ***!
@@ -56,7 +66,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"scrollreveal\": () => (/* binding */ scrollreveal)\n/* harmony export */ });\nfunction scrollreveal() {\n  ScrollReveal().reveal('.banner-img__container', {\n    delay: 300,\n    duration: 1000,\n    easing: 'steps(10)'\n  });\n  ScrollReveal().reveal('.banner span , .banner h1, .banner p, .banner button', {\n    delay: 600,\n    interval: 2000,\n    duration: 1000,\n    easing: 'ease-in'\n  });\n  ScrollReveal().reveal('.skills-item', {\n    delay: 500,\n    interval: 400,\n    easing: 'ease-in'\n  });\n  ScrollReveal().reveal('.experience-item', {\n    delay: 1600,\n    interval: 400,\n    easing: 'ease-in'\n  });\n  ScrollReveal().reveal('.projects-header', {\n    delay: 500,\n    duration: 500,\n    easing: 'steps(100)'\n  });\n  ScrollReveal().reveal('.projects-item', {\n    delay: 500,\n    interval: 400,\n    duration: 500,\n    easing: 'ease-in'\n  });\n  ScrollReveal().reveal('.project-name', {\n    delay: 200,\n    interval: 600,\n    opacity: 0.3,\n    easing: 'ease-in'\n  });\n  ScrollReveal().reveal('.contact-item', {\n    delay: 500,\n    duration: 500,\n    easing: 'ease-in'\n    // rotate: { x:-90 }\n  });\n}\n\n//# sourceURL=webpack://Visual_Designer_Pnortfolio/./src/modules/scrollReveal.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"scrollreveal\": () => (/* binding */ scrollreveal)\n/* harmony export */ });\n/* harmony import */ var _counter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./counter */ \"./src/modules/counter.js\");\n\nfunction scrollreveal() {\n  ScrollReveal().reveal('.banner-img__container', {\n    delay: 300,\n    duration: 1000,\n    easing: 'steps(10)'\n  });\n  ScrollReveal().reveal('.banner span , .banner h1, .banner p, .banner button', {\n    delay: 600,\n    interval: 1000,\n    duration: 2500,\n    easing: 'ease-in'\n  });\n  ScrollReveal().reveal('.skills-item', {\n    delay: 500,\n    interval: 600,\n    duration: 1200,\n    easing: 'ease-in'\n  });\n  ScrollReveal().reveal('.experience-item', {\n    delay: 1600,\n    interval: 400,\n    easing: 'ease-in'\n  });\n\n  // COUNTER\n  ScrollReveal().reveal('.counter', {\n    delay: 1600,\n    interval: 500,\n    distance: '30px',\n    origin: 'bottom',\n    easing: 'ease-in',\n    afterReveal: _counter__WEBPACK_IMPORTED_MODULE_0__.counter\n  });\n  ScrollReveal().reveal('.projects-header', {\n    delay: 500,\n    duration: 500,\n    easing: 'steps(100)'\n  });\n  ScrollReveal().reveal('.projects-item', {\n    delay: 500,\n    interval: 400,\n    duration: 500,\n    easing: 'ease-in'\n  });\n  ScrollReveal().reveal('.project-name', {\n    delay: 200,\n    interval: 600,\n    opacity: 0.3,\n    easing: 'ease-in'\n  });\n  ScrollReveal().reveal('.contact-item', {\n    delay: 500,\n    duration: 500,\n    easing: 'ease-in'\n  });\n}\n\n//# sourceURL=webpack://Visual_Designer_Pnortfolio/./src/modules/scrollReveal.js?");
 
 /***/ }),
 
