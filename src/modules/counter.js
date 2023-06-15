@@ -16,5 +16,10 @@ export function counter(el) {
 
 
 function showCounter(el, value) {
-   el.innerText = value.toString().padStart(2, '0');
+   if(value > 50 ){
+      el.innerText = value.toString().padStart(2, '0') + "+";
+   }else{
+      el.innerText = value.toString().padStart(2, '0');
+   }
+   
 }
