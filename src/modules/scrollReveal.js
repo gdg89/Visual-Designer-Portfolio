@@ -11,7 +11,7 @@ export function scrollreveal() {
     ScrollReveal().reveal('.banner span , .banner h1, .banner p, .banner button', {
         delay: 600,
         interval: 1000,
-        duration: 2500,
+        duration: 2000,
         easing: 'ease-in',
 
     });
@@ -44,15 +44,15 @@ export function scrollreveal() {
 
     ScrollReveal().reveal('.projects-header', {
         delay: 500,
-        duration: 500,
-        easing: 'steps(100)',
+        duration: 1000,
+        easing: 'ease-in',
 
     });
 
     ScrollReveal().reveal('.projects-item', {
         delay: 500,
         interval: 400,
-        duration: 500,
+        duration: 1000,
         easing: 'ease-in',
 
 
@@ -68,7 +68,7 @@ export function scrollreveal() {
 
     ScrollReveal().reveal('.contact-item', {
         delay: 500,
-        duration: 500,
+        duration: 1000,
         easing: 'ease-in',
 
     });

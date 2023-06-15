@@ -9,7 +9,7 @@ export function counter(el) {
       showCounter(el, elValue);
       elValue++;
 
-      if(elValue > 20) interval = 10;
+      if(elValue > 20) interval = 1;
       if(elValue > elMaxValue) clearInterval(counterInterval);
    }, interval);
 }
@@ -17,9 +17,9 @@ export function counter(el) {
 
 function showCounter(el, value) {
    if(value > 50 ){
-      el.innerText = value.toString().padStart(2, '0') + "+";
+      el.innerHTML = value.toString().padStart(2, '0') + "+";
    }else{
-      el.innerText = value.toString().padStart(2, '0');
+      el.innerHTML= value.toString().padStart(2, '0');
    }
    
 }
